@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "824188625234",
+    "firebase_url": "https://eztoll-76956.firebaseio.com",
+    "project_id": "eztoll-76956",
+    "storage_bucket": "eztoll-76956.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:824188625234:android:c94252b81abfaa69",
+        "android_client_info": {
+          "package_name": "com.example.eztoll"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "824188625234-r869sf6hg47cj5ovgdj447n4bvaaehs5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.eztoll",
+            "certificate_hash": "ca358e7ee252afc7745a3015b3e68b4c2b1864a5"
+          }
+        },
+        {
+          "client_id": "824188625234-tdsakrgeqog1l1it5l43s71d20oa08ia.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOdOY1fslX0DuyPjFq_lMskLLDxJwWfx4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "824188625234-tdsakrgeqog1l1it5l43s71d20oa08ia.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

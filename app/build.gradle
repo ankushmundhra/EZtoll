@@ -1,0 +1,86 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.example.eztoll"
+        minSdkVersion 23
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+
+    // solve duplicate classes
+    applicationVariants.all { variant ->
+        variant.getRuntimeConfiguration().exclude group: 'com.google.code.findbugs', module: 'jsr305'
+        variant.getRuntimeConfiguration().exclude group: 'com.google.code.findbugs', module: 'annotations'
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://dl.bintray.com/ibm-cloud-sdks/ibm-cloud-sdk-repo"
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation files('libs/itextpdf-5.2.1.jar')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.ibm.watson:text-to-speech:7.0.0'
+    implementation 'com.ibm.watson:speech-to-text:7.0.0'
+    implementation 'com.ibm.watson:assistant:7.0.0'
+    implementation 'com.ibm.watson.developer_cloud:android-sdk:0.5.0'
+    implementation 'com.google.android.gms:play-services-maps:16.1.0'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.google.firebase:firebase-core:16.0.9'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+//    implementation "com.squareup.okhttp3:okhttp:3.4.1"
+//    implementation "com.squareup.okhttp3:logging-interceptor:3.4.1"
+
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.google.firebase:firebase-auth:17.0.0'
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.yarolegovich:sliding-root-nav:1.1.0'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.15'
+//    implementation 'com.itextpdf:itext-pdfa:5.5.10'
+//    implementation 'com.itextpdf:itextg:5.5.9'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+//    implementation("com.squareup.okhttp3:logging-interceptor:4.1.0")
+
+    implementation('com.paytm:pgplussdk:1.3.3') {
+        transitive = true;
+    }
+
+}
+
+apply plugin: 'com.google.gms.google-services'

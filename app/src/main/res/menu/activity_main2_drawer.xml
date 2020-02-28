@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_vr"
+            android:icon="@drawable/register"
+            android:title="Vehicle Registration" />
+        <item
+            android:id="@+id/nav_rt"
+            android:icon="@drawable/rec"
+            android:title="Recharge Transactions" />
+        <item
+            android:id="@+id/nav_tt"
+            android:icon="@drawable/tol"
+            android:title="Toll Transactions" />
+        <item
+            android:id="@+id/nav_tl"
+            android:icon="@drawable/location"
+            android:title="Toll Locations" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/menu_send" />
+        </menu>
+    </item>
+
+    <item android:title="Contact">
+        <menu>
+            <item
+                android:id="@+id/facebook"
+                android:icon="@drawable/facebook"
+                android:title="Facebook" />
+            <item
+                android:id="@+id/insta"
+                android:icon="@drawable/instagram"
+                android:title="Instagram" />
+            <item
+                android:id="@+id/whatsapp"
+                android:icon="@drawable/whatsapp"
+                android:title="WhatsApp" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".NfcActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/bgHeader"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@drawable/header_login"
+        android:elevation="5dp" />
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:elevation="5dp"
+        android:text="NFC Tap"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp" />
+
+
+    <EditText
+        android:id="@+id/et_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="40dp"
+        android:hint="@string/hint_message" />
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_write"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/et_message"-->
+    <!--android:layout_marginTop="@dimen/activity_horizontal_margin"-->
+    <!--android:text="@string/message_write_tag"-->
+    <!--style="@style/Widget.AppCompat.Button.Colored"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_write"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_marginTop="330dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:background="@drawable/bg_ui"-->
+<!--        android:text="@string/message_write_tag"-->
+<!--        android:textAllCaps="true"-->
+<!--        android:textColor="@color/colorWhite" />-->
+
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_read"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/btn_write"-->
+        <!--android:layout_marginTop="@dimen/activity_horizontal_margin"-->
+        <!--android:text="@string/message_read_tag"-->
+        <!--style="@style/Widget.AppCompat.Button.Colored"/>-->
+
+    <Button
+        android:id="@+id/btn_read"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg_ui"
+        android:text="@string/message_read_tag"
+        android:textAllCaps="true"
+        android:textColor="@color/colorWhite" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/nfc_12" />
+
+
+</RelativeLayout>

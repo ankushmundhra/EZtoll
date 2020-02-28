@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ibm.watson:assistant:7.0.0@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ibm.watson/assistant/7.0.0/72d4f3a108316c959bb1d63ff21009396b3c6b98/assistant-7.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ibm.watson/assistant/7.0.0/c5e221145673f719d7c3838de6eb4056b03468c3/assistant-7.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
