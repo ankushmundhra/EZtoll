@@ -63,6 +63,7 @@ public class MainActivity extends AppCompatActivity  {
     public static Uri personPhoto;
 
     FirebaseAuth auth;
+    TextView tvsignup;
     EditText email,password;
     Button loginbtn;
     Button btnViewAll;
@@ -126,7 +127,15 @@ public class MainActivity extends AppCompatActivity  {
         //opening the database
         mDatabase = openOrCreateDatabase(MainActivity.DATABASE_NAME, MODE_PRIVATE, null);
 
+        tvsignup = findViewById(R.id.tvsignup);
 
+        tvsignup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),RegisterActivity.class);
+                startActivity(intent);
+            }
+        });
 
         loginbtn.setOnClickListener(new View.OnClickListener(){
             @Override
