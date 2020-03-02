@@ -11,7 +11,7 @@ The android app lets you:
 - Create account or sign up using google.
 - Simple yet beautiful UI.
 - Register your vehicle and supporting documents.
-- Reacharge and manage your wallet in order to pay in tolls.
+- Recharge and manage your wallet in order to pay in tolls.
 - Uses PayTM API for payment gateway.
 - Uses NFC to tap in the NFC tags present in toll booths.
 - We can see all the transaction history.
