@@ -47,5 +47,5 @@ The android app lets you:
 On Android versions prior to Android 6.0, EZToll requires the following permissions:
 - Full Network Access.
 - View Network Connections.
-- Run at startup.
+- NFC Access
 - Read and write access to external storage.
