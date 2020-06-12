@@ -4,7 +4,7 @@
 width="160" hspace="10" vspace="10">
 
 <a target="_blank" href="LICENSE"><img src="https://img.shields.io/badge/licence-MIT-brightgreen.svg" alt="license : MIT"></a>
-<a target="_blank" href="https://www.cmarix.com/android-application-development-services.html"><img src="https://img.shields.io/badge/platform-android-blue.svg" alt="license : MIT"></a>
+<a target="_blank" href=""><img src="https://img.shields.io/badge/platform-android-blue.svg" alt="license : MIT"></a>
 
 This system is used to reduce the manual presence near toll gate as well as the time required to pay toll and avoids the scope of presenting fake documents at the time of document verification. A vehicle owner need not carry any documents with him often; instead use an NFC tag which consists of a unique id that specifies the RC details, insurance validity, emission status etc. This information is stored in registration database and as per the registration their vehicle details also will be stored in a separate data base named vehicle registration.
 
